@@ -145,9 +145,21 @@ header{
     background-color: transparent;
     border: 2px solid white;
     color: white;
-    height: 200px;
+    height: auto;
 }
 
+/*Seção serviços*/
+.cardservico{
+    text-align: center;
+}
+.icon-servico{
+    font-size: 80px;
+    color: #532173;
+    margin-bottom: 15px;
+}
+.icon-servico:hover{
+    font-size: 90px;
+}
 
 
 
@@ -202,7 +214,9 @@ footer h3{
 @media (max-width: 575.98px) {
     /*header*/
     #logo{
-        display: none;
+        /* display: none; */
+        width: 180px;
+        height: auto;
     }
 }
 
