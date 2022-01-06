@@ -8,7 +8,7 @@
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 55%, 29%);
-    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-second: hsl(var(--hue-color), 30%, 80%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
     --title-color: hsl(var(--hue-color), 60%, 100%);
@@ -44,6 +44,7 @@
     box-sizing: border-box;
 }
 
+
 html{
     scroll-behavior: smooth;
 }
@@ -59,21 +60,26 @@ h1,h2,h3,h4 {
     color: var(--title-color);
     font-weight: var(--font-semi-bold);
 }
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
 
 
 /*Header*/
 header{
     background-color: var(--first-color);
     height: auto;
-
 }
 
 #logo{
     width: 220px;
-    margin-right: 0;
+    margin: 0;
 }
 .item{
-    color: white;
     font-size: var(--smaller-font-size);
     color: var(--title-color);
     font-weight: var(--font-medium);
@@ -94,6 +100,40 @@ header{
 
 
 
+
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+    background-color: var(--first-color);
+    height: auto;
+}
+footer p{
+    color: var(--first-color-second);
+    text-align: justify;
+}
+.caixa-contato{
+    display: flex;
+    align-items: baseline;
+}
+
+.icone{
+    color: var(--first-color-second);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.icone-sociais{
+    font-size: 35px;
+    color: var(--first-color-second);
+}
+.icone-sociais:hover{
+    color: white;
+}
 
 
 
