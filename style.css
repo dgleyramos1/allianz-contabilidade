@@ -26,6 +26,7 @@ body{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
     color: black;
+    padding-top: 70px;
 }
 
 h1,h2,h3,h4 {
@@ -38,6 +39,11 @@ h1,h2,h3,h4 {
 header{
     background-color: #532173;
     height: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    z-index: 1000;
 }
 
 #logo{
