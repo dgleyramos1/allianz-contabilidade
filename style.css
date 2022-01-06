@@ -86,8 +86,6 @@ header{
 #img-hero{
     width: 520px;
 }
-
-
 /*button*/
 #caixaBotoes{
     width: 80%;
@@ -122,7 +120,34 @@ header{
 }
 
 
+/*Seção about*/
+#about{
+    margin-top: 60px;
+    padding-top: 30px;
+}
 
+#linha-about{
+    width: 40%;
+    border: 1px solid #532173;
+    margin-top: -10px;
+}
+
+.card{
+    text-align: center;
+    border: 1px solid #532173;
+    border-radius: 5px;
+}
+
+.icone-card{
+    font-size: 80px;
+    color: #532173;
+    padding-top: 10px;
+}
+.card-text{
+    text-align: justify;
+    padding-top: 10px;
+    font-size: 14px;
+}
 
 
 
