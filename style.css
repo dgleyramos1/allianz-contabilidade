@@ -22,7 +22,7 @@ html{
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: .938rem;
+    font-size: 1rem;
     color: black;
 }
 
@@ -65,122 +65,87 @@ header{
 
 /*Seção hero*/
 #hero{
-    height: auto;
-    display: flex;
-    align-items: center;
+    margin-bottom: 60px;
 }
-#text-container{
-    display: flex;
-    align-content: center;
-    align-items: center;
+#img-container{
+    margin-top: 15px;
 }
-
-#apresentacao h2{
-    color: black;
-}
-#apresentacao p{
-    text-align: justify;
-
-}
-
-#img-hero{
-    width: 520px;
+#apresentacao{
+    margin-top: 15px;
 }
 /*button*/
-#caixaBotoes{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
 #botaoServico{
-    width: auto;
-    border: 3px solid #532173;
-    border-radius: 10px;
+    border: 2px solid #532173;
     color: black;
+    margin-bottom: 5px;
 }
-#botaoServico:hover{
-    background-color: #532173;
-    color: white;
-}
-
 #botaoContato{
-    width: auto;
-    color: white;
+    border: 2px solid #532173;
     background-color: #532173;
-    border-radius: 10px;
-    border: 3px solid #532173;
-}
-#botaoContato:hover{
-    color: black;
-    background-color: transparent;
-    border-radius: 10px;
+    color: white;
+    margin-top: 5px;
 }
 
 
 /*Seção about*/
 #about{
-    margin-top: 60px;
-    padding-top: 30px;
+    margin-bottom: 60px;
 }
-
+#quem-somos{
+    text-align: center;
+}
 #linha-about{
     width: 40%;
+    margin: 0 auto;
     border: 1px solid #532173;
-    margin-top: -10px;
+    margin-top: -5px;
+    margin-bottom: 30px;
 }
 
-.card{
+#card-about{
     text-align: center;
-    border: 1px solid #532173;
-    border-radius: 5px;
+    border: 2px solid #532173;
+    margin: 5px;
+    padding: 5px;
 }
-.cardTitulo{
-    color: black;
-}
-
 .icone-card{
     font-size: 80px;
     color: #532173;
-    padding-top: 10px;
 }
 .card-text{
     text-align: justify;
-    padding-top: 10px;
-    font-size: 14px;
 }
-
 /*Seção atendimento*/
 #atendimento{
-    height: 100vh;
-    background: url("img/atendimento.png") center no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #532173;
 }
 .card-ated{
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid white;
+    height: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 250px;
-    background: transparent;
-    border: 2px solid #532173;
 }
 .card-icon{
     font-size: 80px;
-    color: #532173;
+    color: white;
 }
 .cardTituloDois{
     color: white;
 }
-
 .cardText{
+    background-color: transparent;
+    border: 2px solid white;
     color: white;
-    background-color: #532173;
-    border: 2px solid #532173;
-    height: 250px;
+    height: 200px;
 }
 
 
@@ -239,51 +204,174 @@ footer h3{
     #logo{
         display: none;
     }
-
-    /*Seção hero*/
-    #text-container{
-        margin-top: 15px;
-        order: 2;
-    }
-    #img-container{
-        order: 1;
-    }
-
-    /*button*/
-    #caixaBotoes{
-        flex-direction: column;
-        width: 90%;
-        justify-items: center;
-        margin: 0 auto;
-    }
-
-    #botaoServico{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    #botaoContato{
-        width: 100%;
-        color: white;
-        background-color: #532173;
-        border-radius: 10px;
-        border: 3px solid #532173;
-    }
-    #botaoContato:hover{
-        color: black;
-        background-color: transparent;
-        border-radius: 10px;
-    }
 }
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {}
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #botaoContato{
+        margin-top: 0;
+    }
+}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /*hero*/
+    #hero{
+        margin-top: 60px;
+    }
+    #img-container{
+        order: 2;
+    }
+    /*quem somos*/
+    #about{
+        margin-top: 60px;
+    }
+    #quem-somos{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+    #linha-about{
+        margin: 0;
+        margin-top: -5px;
+    }
+}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    /*hero*/
+    #hero{
+        margin-top: 60px;
+    }
+    #botaoContato{
+        margin-top: 0;
+    }
+    #text-container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+    #img-container{
+        order: 2;
+    }
+    /*quem somos*/
+    #about{
+        margin-top: 60px;
+    }
+    #quem-somos{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+    #linha-about{
+        margin: 0;
+        margin-top: -5px;
+    }
+
+    /*Atendimento*/
+    #atendimento{
+        height: 100vh;
+        background: url("img/atendimento.png") center no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .card-ated{
+        background-color: transparent;
+        text-align: center;
+        border: 2px solid white;
+        height: 250px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-icon{
+        font-size: 80px;
+        color: white;
+    }
+    .cardTituloDois{
+        color: white;
+    }
+    .cardText{
+        background-color: #532173;
+        border: 2px solid white;
+        color: white;
+        height: 250px;
+    }
+    .cardFont{
+        font-size: 14px;
+    }
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    /*hero*/
+    #hero{
+        margin-top: 60px;
+    }
+    #botaoContato{
+        margin-top: 0;
+    }
+    #text-container{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+    #img-container{
+        order: 2;
+    }
+    /*quem somos*/
+    #about{
+        margin-top: 60px;
+    }
+    #quem-somos{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+    }
+    #linha-about{
+        margin: 0;
+        margin-top: -5px;
+    }
+
+    /*Atendimento*/
+    #atendimento{
+        height: 100vh;
+        background: url("img/atendimento.png") center no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .card-ated{
+        background-color: transparent;
+        text-align: center;
+        border: 2px solid white;
+        height: 250px;
+        display: flex;
+        margin-top: 0;
+        margin-bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .card-icon{
+        font-size: 80px;
+        color: white;
+    }
+    .cardTituloDois{
+        color: white;
+    }
+    .cardText{
+        background-color: #532173;
+        border: 2px solid white;
+        color: white;
+        height: 250px;
+    }
+    .cardFont{
+        font-size: 16px;
+    }
+}
