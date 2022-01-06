@@ -224,6 +224,33 @@ footer h3{
     text-align: center;
 }
 
+/*Seção faq*/
+#faq{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.paragrafo-faq{
+    text-align: justify;
+}
+
+/*Editando accordion*/
+.accordion-button:not(.collapsed){
+    background: transparent;
+}
+.accordion-flush .accordion-item .accordion-button{
+    color: black;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color: #532173;
+    outline: 0;
+    box-shadow: 0 0 0 0.05rem #532173;
+}
+
+.acordeon{
+    margin-top: 30px;
+}
+
 
 
 
@@ -367,7 +394,19 @@ footer h3{
         color: black;
         border-radius: 10px;
         border: 3px solid #532173;
-     }
+    }
+
+
+     /*Faq*/
+    .acordeon{
+        margin-top: 0;
+    }
+    .funcionalidade h4, p{
+        text-align: left;
+    }
+    .acordeon h4, p{
+        text-align: left;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -458,5 +497,16 @@ footer h3{
         color: black;
         border-radius: 10px;
         border: 3px solid #532173;
-     }
+    }
+
+    /*Faq*/
+    .acordeon{
+        margin-top: 0;
+    }
+    .funcionalidade h4, p{
+        text-align: left;
+    }
+    .acordeon h4, p{
+        text-align: left;
+    }
 }
