@@ -161,6 +161,25 @@ header{
     font-size: 90px;
 }
 
+/*Seção estrutura*/
+#estrutura{
+    text-align: center;
+}
+.paragrafo-estrutura-top{
+    text-align: center;
+    margin-bottom: 0px;
+}
+.paragrafo-estrutura{
+    text-align: justify;
+    margin-top: 15px;
+}
+ #botao-saiba-mais{
+    background: #532173;
+    margin-bottom: 30px;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid #532173;
+ }
 
 
 /*Footer*/
@@ -250,6 +269,14 @@ footer h3{
         margin: 0;
         margin-top: -5px;
     }
+    /*Seção estrutura*/
+    #estrutura{
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    .paragrafo-estrutura-top{
+        text-align: left;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -319,6 +346,28 @@ footer h3{
     .cardFont{
         font-size: 14px;
     }
+    /*Seção estrutura*/
+    #estrutura{
+        text-align: left;
+        height: 100vh;
+        background: url("img/bg-estrutura.png") center no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .paragrafo-estrutura-top{
+        text-align: left;
+        font-size: 14px;
+    }
+    .paragrafo-estrutura{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    #botao-saiba-mais:hover{
+        background: transparent;
+        color: black;
+        border-radius: 10px;
+        border: 3px solid #532173;
+     }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -388,4 +437,26 @@ footer h3{
     .cardFont{
         font-size: 16px;
     }
+    /*Seção estrutura*/
+    #estrutura{
+        text-align: left;
+        height: 100vh;
+        background: url("img/bg-estrutura.png") center no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .paragrafo-estrutura-top{
+        text-align: left;
+        font-size: 14px;
+    }
+    .paragrafo-estrutura{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    #botao-saiba-mais:hover{
+        background: transparent;
+        color: black;
+        border-radius: 10px;
+        border: 3px solid #532173;
+     }
 }
