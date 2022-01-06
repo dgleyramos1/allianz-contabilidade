@@ -1,47 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;900&display=swap');
 
-
-:root {
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    --hue-color: 277; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
-
-    /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 55%, 29%);
-    --first-color-second: hsl(var(--hue-color), 30%, 80%);
-    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
-    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
-    --title-color: hsl(var(--hue-color), 60%, 100%);
-    --text-color: hsl(var(--hue-color), 8%, 45%);
-    --text-color-light: hsl(var(--hue-color), 15%, 35%);
-    --input-color: hsl(var(--hue-color), 70%, 90%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
-    --container-color: #fff;
-    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
-    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
-
-
-    /*========== Font and typography ==========*/
-    --body-font: 'Be Vietnam Pro', sans-serif;
-
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    --big-font-size: 2rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1.125rem;
-    --normal-font-size: .938rem;
+    /* --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
-
-    /*========== Font weight ==========*/
     --font-medium: 500;
     --font-semi-bold: 600;
-}
+    */
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none !important;
+    list-style: none;
 }
 
 
@@ -50,48 +21,40 @@ html{
 }
 
 body{
-    font-family: var(--body-font);
-    font-size: var(--normal-font-size);
-    background-color: var(--body-color);
-    color: var(--text-color);
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: .938rem;
+    color: black;
 }
 
 h1,h2,h3,h4 {
-    color: var(--title-color);
-    font-weight: var(--font-semi-bold);
-}
-ul{
-    list-style: none;
+    font-weight: 600;
 }
 
-a{
-    text-decoration: none;
-}
 
 
 /*Header*/
 header{
-    background-color: var(--first-color);
+    background-color: #532173;
     height: auto;
 }
 
 #logo{
-    width: 220px;
+    width: 180px;
+    height: 60px;
     margin: 0;
 }
 .item{
-    font-size: var(--smaller-font-size);
-    color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-size: .813rem;
+    color: white;
+    font-weight: 500;
 }
 .item:hover{
-    color: var(--title-color);
-    border-bottom: 1px solid var(--title-color);
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .ativo{
-    color: var(--title-color);
-    border-bottom: 1px solid var(--title-color);
+    border-bottom: 1px solid white;
 }
 .navbar-toggler{
     color: white;
@@ -100,7 +63,63 @@ header{
 
 
 
+/*Seção hero*/
+#hero{
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+#text-container{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
 
+#apresentacao h2{
+    color: black;
+}
+#apresentacao p{
+    text-align: justify;
+
+}
+
+#img-hero{
+    width: 520px;
+}
+
+
+/*button*/
+#caixaBotoes{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#botaoServico{
+    width: auto;
+    border: 3px solid #532173;
+    border-radius: 10px;
+    color: black;
+}
+#botaoServico:hover{
+    background-color: #532173;
+    color: white;
+}
+
+#botaoContato{
+    width: auto;
+    color: white;
+    background-color: #532173;
+    border-radius: 10px;
+    border: 3px solid #532173;
+}
+#botaoContato:hover{
+    color: black;
+    background-color: transparent;
+    border-radius: 10px;
+}
 
 
 
@@ -110,11 +129,12 @@ header{
 
 /*Footer*/
 footer{
-    background-color: var(--first-color);
+    background-color: #532173;
     height: auto;
+    padding-top: 15px;
 }
 footer p{
-    color: var(--first-color-second);
+    color: black;
     text-align: justify;
 }
 .caixa-contato{
@@ -123,16 +143,20 @@ footer p{
 }
 
 .icone{
-    color: var(--first-color-second);
+    color: rgb(255, 255, 255, 0.5);
     font-size: 25px;
     margin-right: 10px;
 }
 .icone-sociais{
     font-size: 35px;
-    color: var(--first-color-second);
+    color: rgb(255, 255, 255, 0.5);
 }
 .icone-sociais:hover{
     color: white;
+}
+footer h3{
+    color: white;
+    padding-bottom: 15px;
 }
 
 
@@ -145,6 +169,41 @@ footer p{
     /*header*/
     #logo{
         display: none;
+    }
+
+    /*Seção hero*/
+    #text-container{
+        margin-top: 15px;
+        order: 2;
+    }
+    #img-container{
+        order: 1;
+    }
+
+    /*button*/
+    #caixaBotoes{
+        flex-direction: column;
+        width: 90%;
+        justify-items: center;
+        margin: 0 auto;
+    }
+
+    #botaoServico{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #botaoContato{
+        width: 100%;
+        color: white;
+        background-color: #532173;
+        border-radius: 10px;
+        border: 3px solid #532173;
+    }
+    #botaoContato:hover{
+        color: black;
+        background-color: transparent;
+        border-radius: 10px;
     }
 }
 
