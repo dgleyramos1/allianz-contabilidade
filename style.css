@@ -137,6 +137,9 @@ header{
     border: 1px solid #532173;
     border-radius: 5px;
 }
+.cardTitulo{
+    color: black;
+}
 
 .icone-card{
     font-size: 80px;
@@ -149,6 +152,37 @@ header{
     font-size: 14px;
 }
 
+/*Seção atendimento*/
+#atendimento{
+    height: 100vh;
+    background: url("img/atendimento.png") center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-ated{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background: transparent;
+    border: 2px solid #532173;
+}
+.card-icon{
+    font-size: 80px;
+    color: #532173;
+}
+.cardTituloDois{
+    color: white;
+}
+
+.cardText{
+    color: white;
+    background-color: #532173;
+    border: 2px solid #532173;
+    height: 250px;
+}
+
 
 
 
@@ -159,7 +193,7 @@ footer{
     padding-top: 15px;
 }
 footer p{
-    color: black;
+    color: rgb(255, 255, 255, 0.7);
     text-align: justify;
 }
 .caixa-contato{
@@ -182,6 +216,16 @@ footer p{
 footer h3{
     color: white;
     padding-bottom: 15px;
+}
+
+#texto-footer-copy{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#paragrafo-fim{
+    text-align: center;
 }
 
 
