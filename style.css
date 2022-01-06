@@ -18,6 +18,8 @@
 
 html{
     scroll-behavior: smooth;
+    scrollbar-color: #532173;
+    scrollbar-width: 20px;
 }
 
 body{
@@ -181,50 +183,7 @@ header{
     border: 3px solid #532173;
  }
 
-
-/*Footer*/
-footer{
-    background-color: #532173;
-    height: auto;
-    padding-top: 15px;
-}
-footer p{
-    color: rgb(255, 255, 255, 0.7);
-    text-align: justify;
-}
-.caixa-contato{
-    display: flex;
-    align-items: baseline;
-}
-
-.icone{
-    color: rgb(255, 255, 255, 0.5);
-    font-size: 25px;
-    margin-right: 10px;
-}
-.icone-sociais{
-    font-size: 35px;
-    color: rgb(255, 255, 255, 0.5);
-}
-.icone-sociais:hover{
-    color: white;
-}
-footer h3{
-    color: white;
-    padding-bottom: 15px;
-}
-
-#texto-footer-copy{
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-#paragrafo-fim{
-    text-align: center;
-}
-
-/*Seção faq*/
+ /*Seção faq*/
 #faq{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -252,6 +211,73 @@ footer h3{
 }
 
 
+/*Contato*/
+.form-control {
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #532173;
+}
+.form-control::placeholder{
+    color: black;
+}
+.botaoContato{
+    background: #532173;
+    margin-bottom: 15px;
+}
+#contato-enviar{
+    color: white;
+    border: 3px solid #532173;
+    border-radius: 10px;
+}
+#contato-enviar:hover{
+    color: black;
+    border: 3px solid #532173;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/*Footer*/
+footer{
+    background-color: #532173;
+    height: auto;
+    padding-top: 15px;
+}
+footer p{
+    color: rgb(255, 255, 255, 0.8);
+    text-align: justify;
+}
+.caixa-contato{
+    display: flex;
+    align-items: baseline;
+}
+
+.icone{
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.icone-sociais{
+    font-size: 35px;
+    color: rgb(255, 255, 255, 0.8);
+}
+.icone-sociais:hover{
+    color: white;
+}
+footer h3{
+    color: white;
+    padding-bottom: 15px;
+}
+
+#texto-footer-copy{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#paragrafo-fim{
+    text-align: center;
+}
 
 
 
@@ -303,6 +329,11 @@ footer h3{
     }
     .paragrafo-estrutura-top{
         text-align: left;
+    }
+
+    /*Contato*/
+    #img-contato{
+        display: none;
     }
 }
 
@@ -407,6 +438,11 @@ footer h3{
     .acordeon h4, p{
         text-align: left;
     }
+    /*Contato*/
+    .paragrafo-contato{
+        text-align: center;
+        margin-bottom: 30px;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -508,5 +544,11 @@ footer h3{
     }
     .acordeon h4, p{
         text-align: left;
+    }
+
+    /*Contato*/
+    .paragrafo-contato{
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
