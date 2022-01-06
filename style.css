@@ -327,6 +327,7 @@ footer h3{
     #linha-about{
         margin: 0;
         margin-top: -5px;
+        border: 1px solid #532173;
     }
     /*Seção estrutura*/
     #estrutura{
@@ -374,6 +375,7 @@ footer h3{
     #linha-about{
         margin: 0;
         margin-top: -5px;
+        border: 1px solid #532173;
     }
 
     /*Atendimento*/
@@ -409,6 +411,11 @@ footer h3{
     }
     .cardFont{
         font-size: 14px;
+    }
+
+    /*Seção serviços*/
+    .paragrafo-servicos{
+        text-align: center;
     }
     /*Seção estrutura*/
     #estrutura{
@@ -482,6 +489,7 @@ footer h3{
     #linha-about{
         margin: 0;
         margin-top: -5px;
+        border: 1px solid #532173;
     }
 
     /*Atendimento*/
@@ -517,6 +525,10 @@ footer h3{
     }
     .cardFont{
         font-size: 16px;
+    }
+    /*Seção serviços*/
+    .paragrafo-servicos{
+        text-align: center;
     }
     /*Seção estrutura*/
     #estrutura{
