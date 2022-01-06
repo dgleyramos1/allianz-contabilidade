@@ -1,9 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;900&display=swap');
 
-/*font-family: 'Be Vietnam Pro', sans-serif;*/
+
+:root {
+    /*========== Colors ==========*/
+    /* Change favorite color */
+    --hue-color: 277; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+
+    /* HSL color mode */
+    --first-color: hsl(var(--hue-color), 55%, 29%);
+    --first-color-second: hsl(var(--hue-color), 69%, 61%);
+    --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+    --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+    --title-color: hsl(var(--hue-color), 60%, 100%);
+    --text-color: hsl(var(--hue-color), 8%, 45%);
+    --text-color-light: hsl(var(--hue-color), 15%, 35%);
+    --input-color: hsl(var(--hue-color), 70%, 90%);
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --container-color: #fff;
+    --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+
+
+    /*========== Font and typography ==========*/
+    --body-font: 'Be Vietnam Pro', sans-serif;
+
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+}
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,h4 {
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+
+/*Header*/
+header{
+    background-color: var(--first-color);
+    height: auto;
+
+}
+
+#logo{
+    width: 220px;
+    margin-right: 0;
+}
+.item{
+    color: white;
+    font-size: var(--smaller-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+.item:hover{
+    color: var(--title-color);
+    border-bottom: 1px solid var(--title-color);
+}
+
+.ativo{
+    color: var(--title-color);
+    border-bottom: 1px solid var(--title-color);
+}
+.navbar-toggler{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+/*Responsividade*/
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /*header*/
+    #logo{
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
