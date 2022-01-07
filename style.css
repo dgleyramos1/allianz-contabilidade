@@ -21,6 +21,23 @@ html{
     scrollbar-color: #532173;
     scrollbar-width: 20px;
 }
+/* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
+e 10px de altura para a barra horizontal */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+    
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+::-webkit-scrollbar-track {
+    background:white;
+}
+    
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+estou colocando uma cor azul clara nela*/
+::-webkit-scrollbar-thumb {
+    background: #532173;
+}
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
@@ -97,17 +114,11 @@ header{
 
 /*Seção about*/
 #about{
-    margin-bottom: 60px;
+    padding-bottom: 60px;
+    padding-top: 120px;
 }
 #quem-somos{
     text-align: center;
-}
-#linha-about{
-    width: 40%;
-    margin: 0 auto;
-    border: 1px solid #532173;
-    margin-top: -5px;
-    margin-bottom: 30px;
 }
 
 #card-about{
@@ -247,7 +258,8 @@ header{
 footer{
     background-color: #532173;
     height: auto;
-    padding-top: 15px;
+    padding-top: 30px;
+    padding-bottom: 5px;
 }
 footer p{
     color: rgb(255, 255, 255, 0.8);
