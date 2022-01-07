@@ -58,7 +58,7 @@ header{
 }
 .item:hover{
     color: white;
-    border-bottom: 1px solid white;
+    /* border-bottom: 1px solid white; */
 }
 
 .ativo{
@@ -285,6 +285,12 @@ footer h3{
     text-align: center;
 }
 
+.link-developer{
+    color: white;
+}
+.link-developer:hover{
+    color: white;
+}
 
 
 /*Responsividade*/
