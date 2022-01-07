@@ -11,16 +11,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none !important;
-    list-style: none;
 }
 
 
-html{
-    scroll-behavior: smooth;
-    scrollbar-color: #532173;
-    scrollbar-width: 20px;
-}
+
 /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
 e 10px de altura para a barra horizontal */
 ::-webkit-scrollbar {
@@ -43,7 +37,7 @@ body{
     font-family: 'Be Vietnam Pro', sans-serif;
     font-size: 1rem;
     color: black;
-    padding-top: 70px;
+    margin-top: 70px;
 }
 
 h1,h2,h3,h4 {
@@ -179,6 +173,7 @@ header{
 .icon-servico:hover{
     font-size: 90px;
 }
+
 
 /*Seção estrutura*/
 #estrutura{
