@@ -398,7 +398,7 @@ footer h3{
     /*Atendimento*/
     #atendimento{
         height: 100vh;
-        background: url("img/atendimento.png") center no-repeat;
+        background: url("../img/atendimento.png") center no-repeat;
         display: flex;
         align-items: center;
     }
@@ -438,7 +438,7 @@ footer h3{
     #estrutura{
         text-align: left;
         height: 100vh;
-        background: url("img/bg-estrutura.png") center no-repeat;
+        background: url("../img/bg-estrutura.png") center no-repeat;
         display: flex;
         align-items: center;
     }
@@ -512,7 +512,7 @@ footer h3{
     /*Atendimento*/
     #atendimento{
         height: 100vh;
-        background: url("img/atendimento.png") center no-repeat;
+        background: url("../img/atendimento.png") center no-repeat;
         display: flex;
         align-items: center;
     }
@@ -551,7 +551,7 @@ footer h3{
     #estrutura{
         text-align: left;
         height: 100vh;
-        background: url("img/bg-estrutura.png") center no-repeat;
+        background: url("../img/bg-estrutura.png") center no-repeat;
         display: flex;
         align-items: center;
     }
