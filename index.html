@@ -17,6 +17,8 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+
 
     <!--Força o reconhecimento das novas TAGS do HTML 5 em alguns navegadores-->
     <!--[if lt IE 9]>
@@ -344,19 +346,22 @@
               <img id="img-contato" class="img-fluid" src="img/img-contato.png" alt="imagem da seção contato allianz contabilidade">
             </div>
             <div class="col-sm-12 col-lg-6 mt-5">
-              <div class="mb-3">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu nome">
-              </div>
-              <div class="mb-3">
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Digite seu email">
-              </div>   
-              <div class="mb-3">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Assunto">
-              </div>
-              <div class="mb-3">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite sua mensagem"></textarea>
-              </div>
-              <a class="btn botaoContato shadow" id="contato-enviar" type="submit">Enviar</a>       
+              <form action="" method="post">
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="nome" id="nome" placeholder="Nome" required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                </div>   
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="assunto" id="assunto" placeholder="Assunto" required>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" name="mensagem" id="mensagem" rows="3" placeholder="Mensagem" required></textarea>
+                </div>
+                <p>Todos os campos são obrigatórios *</p>
+                <input type="submit" name="submit" class="btn botaoContato shadow" onsubmit="enviarForm()" value="Enviar" id="contato-enviar"> 
+              </form>
             </div>
           </div>
         </div>
@@ -423,5 +428,40 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="script.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      function enviarForm(){
+                event.preventDefault()
+                let nome = document.getElementById("nome").value
+                let email = document.getElementById("email").value
+                let assunto = document.getElementById("assunto").value
+                let mensagem = document.getElementById("mensagem").value
+                let msg = `
+                Olá meu nome é ${name}, gostaria de falar sobre ${subject}
+                <br/><br/><br/>
+                ${mensagem}
+                <br/><br/><br/>
+                Espero seu retorno!
+                <br/>
+                name:${nome}<br/>
+                email:${email}                
+                `
+                
+                Email.send({
+                    SecureToken : "ee5cc07e-682e-4706-a914-1cee9ca6a825",
+                    To : ["rdgley@gmail.com", "dgleysilva@gmail.com"],
+                    From : "rdgley@gmail.com",
+                    replaceTo: email,
+                    Subject: subject,
+                    Body: msg
+                    }).then(
+                    alert("Formulário enviado com sucesso!")
+                );
+                document.getElementById("name").value = '';
+                document.getElementById("email").value = '';
+                document.getElementById("subject").value = '';
+                document.getElementById("message").value = '';
+            }
+
+    </script>
   </body>
 </html>
