@@ -40,10 +40,10 @@ if (isset($_POST['BTEnvia'])) {
     //Enviando o email 
     //==================================================== 
     if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $header)){ 
-        echo "<script>document.location = 'index.html'</script>"; 
+        echo "<script>document.location = 'https://allianz-contabilidade.vercel.app/'</script>"; 
     } 
     else{ 
-        echo "<script>document.location = 'index.html'</script>";
+        echo "<script>document.location = 'https://allianz-contabilidade.vercel.app/'</script>";
     } 
     //====================================================
 } 
