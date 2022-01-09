@@ -31,18 +31,20 @@ if (isset($_POST['BTEnvia'])) {
 
     //Seta os Headers (Alterar somente caso necessario) 
     //==================================================== 
-    $header = "From: $email_remetente". "Reply-To: ".$email_reply." \r\n".
-                                        "Return-Path: ".$email_remetente." \r\n".
-                                        "X=Mailer:PHP/".phpversion();
+    $header = "From: $email_remetente".
+              "Reply-To: ".$email_reply." \r\n".
+              "Return-Path: ".$email_remetente." \r\n".
+              "X=Mailer:PHP/".phpversion();
     //====================================================
 
     //Enviando o email 
     //==================================================== 
     if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $header)){ 
-    echo "</b>E-Mail enviado com sucesso!</b>"; 
+        echo "<script>document.location = 'index.html'</script>"; 
     } 
     else{ 
-    echo "</b>Falha no envio do E-Mail!</b>"; } 
+        echo "<script>document.location = 'index.html'</script>";
+    } 
     //====================================================
 } 
 ?>
