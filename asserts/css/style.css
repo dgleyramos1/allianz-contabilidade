@@ -109,7 +109,7 @@ header{
 /*Seção about*/
 #about{
     padding-bottom: 60px;
-    padding-top: 120px;
+    padding-top: 60px;
 }
 #quem-somos{
     text-align: center;
@@ -191,7 +191,7 @@ header{
     background: #532173;
     margin-bottom: 30px;
     color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 3px solid #532173;
  }
 
@@ -210,6 +210,7 @@ header{
 }
 .accordion-flush .accordion-item .accordion-button{
     color: black;
+    border-bottom: 2px solid #532173;
 }
 .accordion-button:focus {
     z-index: 3;
@@ -243,7 +244,7 @@ header{
 #contato-enviar{
     color: white;
     border: 3px solid #532173;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 #contato-enviar:hover{
     color: black;
@@ -260,8 +261,11 @@ footer{
     padding-top: 30px;
     padding-bottom: 5px;
 }
+footer h3{
+    font-weight: bolder;
+}
 footer p{
-    color: rgb(255, 255, 255, 0.8);
+    color: white;
     text-align: justify;
 }
 .caixa-contato{
@@ -303,13 +307,30 @@ footer h3{
     color: white;
 }
 
+.botaoTrabalheConosco{
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.botaoTrabalheConosco:hover{
+    color: black;
+    background-color: white;
+}
+
+.whatsapp {
+    position: fixed;
+    top: 82%;
+    right: 1%;
+    padding: 10px;
+    z-index: 10000000;
+}
+
 
 /*Responsividade*/
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     /*header*/
     #logo{
-        /* display: none; */
         width: 180px;
         height: auto;
     }
@@ -317,6 +338,11 @@ footer h3{
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
+    /*header*/
+    #logo{
+        width: 200px;
+        height: auto;
+    }
     #botaoContato{
         margin-top: 0;
     }
@@ -363,6 +389,11 @@ footer h3{
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    /*header*/
+    #logo{
+        width: 220px;
+        height: auto;
+    }
     /*hero*/
     #hero{
         margin-top: 60px;
@@ -453,7 +484,6 @@ footer h3{
     #botao-saiba-mais:hover{
         background: transparent;
         color: black;
-        border-radius: 10px;
         border: 3px solid #532173;
     }
 
@@ -477,6 +507,11 @@ footer h3{
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    /*header*/
+    #logo{
+        width: 220px;
+        height: auto;
+    }
     /*hero*/
     #hero{
         margin-top: 60px;
@@ -566,7 +601,7 @@ footer h3{
     #botao-saiba-mais:hover{
         background: transparent;
         color: black;
-        border-radius: 10px;
+        border-radius: 5px;
         border: 3px solid #532173;
     }
 
