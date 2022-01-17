@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;900&display=swap');
 
-    /* --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
-    --font-medium: 500;
-    --font-semi-bold: 600;
-    */
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+::selection {
+    background: #532173;
+    color: white;
+}
+ 
 
 
 /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
@@ -160,6 +157,10 @@ header{
     color: white;
     height: auto;
 }
+.cardFont::selection {
+    background: white;
+    color: black;
+}
 
 /*Seção serviços*/
 .cardservico{
@@ -260,6 +261,11 @@ footer{
     height: auto;
     padding-top: 30px;
     padding-bottom: 5px;
+}
+footer h3::selection,
+footer p::selection {
+    background: white;
+    color: black;
 }
 footer h3{
     font-weight: bolder;

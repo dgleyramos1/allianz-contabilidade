@@ -21,10 +21,6 @@ $assunto = $_POST['assunto'];
 $mensagem = $_POST['mensagem'];
 //====================================================
 
-//REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
-//==================================================== 
-$email_remetente = "site@allianzcontabilidadecr.com"; // deve ser uma conta de email do seu dominio 
-//====================================================
 
 //Configurações do email, ajustar conforme necessidade
 //==================================================== 
@@ -32,18 +28,18 @@ $email_reply = "$email";
 //====================================================
   # E-mail de destino. Caso seja mais de um destino, crie um array de e-mails.
   # *OBRIGAT�RIO*
-  $recipients = 'dgleysilva@gmail.com';
+  $recipients = 'destinatario@gmail.com';
 
   # Cabe�alho do e-mail.
   $headers = 
     array (
-      'From'    => 'site@allianzcontabilidadecr.com', # O 'From' � *OBRIGAT�RIO*.
+      'From'    => 'email@dominio.com', # O 'From' � *OBRIGAT�RIO*.
       'To'      => $recipients,
       'Subject' => 'Mensagem enviada do site'
     );
 
   # Utilize esta op��o caso deseje definir o e-mail de resposta
-  $headers['Reply-To'] = "$email_reply";
+  $headers['Reply-To'] .= "$email_reply";
 
   # Utilize esta op��o caso deseje definir o e-mail de retorno em caso de erro de envio
   # $headers['Errors-To'] = 'EMailDeRerornoDeERRO@DominioDeretornoDeErro.com';
@@ -79,9 +75,9 @@ $email_reply = "$email";
   $params = 
     array (
       'auth' => true, # Define que o SMTP requer autentica��o.
-      'host' => 'smtp.allianzcontabilidadecr.com', # Servidor SMTP
-      'username' => 'site=allianzcontabilidadecr.com', # Usu�rio do SMTP
-      'password' => 'Allianz2022contabilidade' # Senha do seu MailBox.
+      'host' => 'smtp.dominio.com', # Servidor SMTP
+      'username' => 'site=dominio.com', # Usu�rio do SMTP
+      'password' => 'senha' # Senha do seu MailBox.
     );
     
   # Define o m�todo de envio
@@ -93,11 +89,11 @@ $email_reply = "$email";
   $result = $mail_object->send($recipients, $headers, $body);
   if (PEAR::IsError($result))
   {
-    echo "ERRO ao tentar enviar o email. (" . $result->getMessage(). ")";
+    echo "<script>document.location = '../../pages/falha.html'</script>";
   }   
   else
   {
-    echo "Email enviado com sucesso!";
+    echo "<script>document.location = '../../pages/sucesso.html'</script>";
        
   }
 ?>
